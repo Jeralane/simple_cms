@@ -1,4 +1,23 @@
 SimpleCms::Application.routes.draw do
+  # root route
+  root "demo#index"
+
+  # default route
+  match ':controller(/:action(/:id))', :via => :get
+
+  #get "demo/index"
+
+  #match "demo",
+  #  :to => "demo#index",
+  #  :via => :get
+
+  # match / simple route
+  # :controller/:action/:id
+
+  # default route
+  # match ':controller(/:action(/:id))', :via => :get
+
+  #
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
