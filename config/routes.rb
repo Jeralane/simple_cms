@@ -1,9 +1,10 @@
 SimpleCms::Application.routes.draw do
+
   # root route
   root "demo#index"
 
   # default route
-  match ':controller(/:action(/:id))', :via => :get
+  match ':controller(/:action(/:id))', :via => [:get, :post]
 
   #get "demo/index"
 
